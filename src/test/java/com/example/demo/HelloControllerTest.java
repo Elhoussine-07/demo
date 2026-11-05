@@ -10,7 +10,7 @@ class HelloControllerTest {
 
     @Test
     void helloReturnsMessage() {
-        assertEquals("Hello CI/CD depuis AWS ECS !!!", controller.hello());
+        assertEquals("Hello CI/CD depuis AWS ECS !!", controller.hello());
     }
 
     @Test
