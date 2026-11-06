@@ -23,12 +23,12 @@ pipeline {
         }
 
         stage('Analyse SonarQube') {
-            steps {
-                withSonarQubeEnv('sonar') {
-                    sh 'mvn -B sonar:sonar'
-                }
-            }
+    steps {
+        withSonarQubeEnv('sonar') {
+            sh 'mvn -B org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=demo'
         }
+    }
+}
 
         stage('Quality Gate') {
             steps {
