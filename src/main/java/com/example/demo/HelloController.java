@@ -9,7 +9,7 @@ public class HelloController {
 
     @GetMapping("/")
     public String hello() {
-        return "Hello CI/CD depuis AWS ECS !!!!";
+        return "Hello CI/CD depuis AWS ECS";
     }
 
     @GetMapping("/add")
